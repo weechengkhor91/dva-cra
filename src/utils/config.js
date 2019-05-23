@@ -13,6 +13,13 @@ const menu = [
         models: () => [import('../models/about')],
         component: () => import('../routes/about'),
     },
+    {
+        id: 'contact',
+        name: 'contact',
+        path: '/contact',
+        models: () => [import('../models/contact')],
+        component: () => import('../routes/contact'),
+    },
 ]
 
 export default menu

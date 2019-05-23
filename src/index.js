@@ -1,13 +1,22 @@
 import React from 'react'
-import ReactDOM from 'react-dom'
 import './index.css'
-import App from './App'
-import * as serviceWorker from './serviceWorker'
 import dva from 'dva'
-import createHistory from 'history/createBrowserHistory'
+//import createHistory from 'history/createBrowserHistory'
 
+const createHistory = require('history').createBrowserHistory
 //initialize
-const app = dva({ history: createHistory() })
+const app = dva({
+  history: createHistory(),
+  // initialState,
+  // onError,
+  // onAction,
+  // onStateChange,
+  // onReducer,
+  // onEffect,
+  // onHmr,
+  // extraReducers,
+  // extraEnhancers,
+})
 
 //plugins
 //app.use({})

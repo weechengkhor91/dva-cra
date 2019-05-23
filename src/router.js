@@ -7,6 +7,7 @@ const  menu  = config
 
 
 function RouterConfig({ history, app }) {
+   // console.log('router',app)
   return (
     <Router history={history}>
       <Switch>
